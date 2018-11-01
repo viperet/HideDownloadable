@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="downloadable">
+        <fieldset name="container_links">
+            <dynamicRows name="link">
+                <container name="record" component="Magento_Ui/js/dynamic-rows/record">
+                        <field name="is_visible" formElement="checkbox">
+                            <argument name="data" xsi:type="array">
+                                <item name="config" xsi:type="array">
+                                    <item name="default" xsi:type="number">1</item>
+                                </item>
+                            </argument>
+                            <settings>
+                                <dataType>boolean</dataType>
+                                <label translate="true">Is Visible</label>
+                                <dataScope>is_visible</dataScope>
+                            </settings>
+                            <formElements>
+                                <checkbox class="Magento\Ui\Component\Form\Element\Checkbox">
+                                    <settings>
+                                        <description translate="true"></description>
+                                        <options class="Magento\Config\Model\Config\Source\Yesno"/>
+                                        <prefer>toggle</prefer>
+                                        <valueMap>
+                                            <map name="false" xsi:type="string">0</map>
+                                            <map name="true" xsi:type="string">1</map>
+                                        </valueMap>
+                                    </settings>
+                                </checkbox>
+                            </formElements>
+                        </field>
+                </container>
+            </dynamicRows>
+        </fieldset>
+    </fieldset>
+</form>

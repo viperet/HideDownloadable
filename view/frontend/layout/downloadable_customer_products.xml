@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Smartymedia\HideDownloadable\Block\Customer\Products\ListProducts" name="downloadable_customer_products_list" template="Magento_Downloadable::customer/products/list.phtml" cacheable="false"/>
+        </referenceContainer>
+    </body>
+</page>
